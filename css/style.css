@@ -277,9 +277,9 @@
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
-.solution__item:hover  span{
-    right: -16px;
-    transition: 0.3s ease-in;
+.solution__item:hover  i{
+    
+    transform: translateX(5px);
 }
 
 .solution__text a.btn__text{
@@ -293,14 +293,17 @@
     font-weight: 600;
     position: relative;
 }
-.solution__text  span{
+.solution__text div {
+    display: flex;
+    align-items: center;
+    
+}
+.solution__text  i{
     font-size: 60%;
-    vertical-align: middle;
+    color: #dc4f72;
     padding-left: 0px;
-    position: absolute;
-    right: -13px;
-    top: 7.5px;
-    transition: all 0.3 ease-in;
+    transition: transform 0.3s ease-in;
+    transform: translateX(2px);
 }
 .solution__text  label{
     padding: 5px 16px;
