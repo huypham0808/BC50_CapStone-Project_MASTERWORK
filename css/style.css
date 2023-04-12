@@ -19,6 +19,7 @@
     font-size: 46px;
     line-height: 1;
     font-weight: 700;
+    margin-bottom: 0;
 }
 
 .title p {
@@ -400,7 +401,130 @@
 }
 
 /* <!-- 8.QUESTION & ANSWER --> */
+.questionAnswer {
+    background-color: #F7F9FC;
+}
+.header__question {
+    max-width: 750px;
+}
+.question__content ul {
+    list-style: none;
+    max-width: 750px;
+}
 
+.questionAnswer .question__img {
+    position: sticky;
+    top: 80px;
+}
+
+.question__img img {
+    border-radius: 6px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.question__img img:hover {
+    transform: translateY(-0.5rem);
+}
+
+.question__content ul li {
+    position: relative;
+    padding: 25px 50px 25px 20px;
+    border: 1px solid #eee;
+    margin: 0 0 15px 0;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.question__content ul li h2 {
+    margin-bottom: 0;
+    font-size: 1.25rem;
+}
+
+.question__content ul li p {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 24.5px;
+    position: relative;
+    overflow: hidden;
+    max-height: 800px;
+    opacity: 1;
+    transform: translate(0, 0);
+    margin-top: 14px;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.question__content ul li i::before,
+.question__content ul li i::after {
+    content: "";
+    position: absolute;
+    background-color: #2C3038;
+    width: 3px;
+    height: 9px;
+
+}
+
+.question__content ul li i {
+    position: absolute;
+    transform: translate(-6px, 0);
+    margin-top: 16px;
+    right: 25px;
+    top: 16px;
+}
+
+.question__content ul li input[type=checkbox] {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+
+.question__content ul li input[type=checkbox]:checked~p {
+    opacity: 0;
+    transform: translate(0, 50%);
+    margin-top: 0;
+    max-height: 0;
+}
+
+.question__content ul li input[type=checkbox]:checked~i::after {
+    transform: translate(-2px, 0) rotate(-45deg);
+}
+
+.question__content ul li input[type=checkbox]:checked~i::before {
+    transform: translate(2px, 0) rotate(45deg);
+}
+
+.question__content ul li input[type=checkbox]~i::after {
+    transform: translate(2px, 0) rotate(-45deg);
+}
+
+.question__content ul li input[type=checkbox]~i::before {
+    transform: translate(-2px, 0) rotate(45deg);
+}
+
+.question__content ul li p,
+.question__content ul li i::before,
+.question__content ul li i::after {
+    transition: all 0.25s ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .question__content ul li h2 {
+        font-size: 1.12rem;
+        line-height: 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+.header__question h3{
+    font-size: 2.5rem;
+    line-height: 50px;
+}
+}
 
 /* <!-- 9. FEATURE --> */
 ul.resp-tabs-list,
