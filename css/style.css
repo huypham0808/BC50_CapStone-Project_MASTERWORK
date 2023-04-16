@@ -1188,7 +1188,25 @@ h2.resp-accordion:first-child {
     background-position: center;
     padding: 7rem 0;
 }
-
+.ourCLient__item .slider-info {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.ourCLient__item .img-circle {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50%;
+    border: 3px solid #cf2952;
+}
 /* <!-- 11.READY TO BUILD --> */
 
 
