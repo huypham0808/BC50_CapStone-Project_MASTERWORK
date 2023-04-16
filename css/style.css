@@ -1181,7 +1181,13 @@ h2.resp-accordion:first-child {
     border-radius: 0.5rem;
 }
 /* <!-- 10.OUR CLIENT TESTIMONIAL --> */
-
+#testimonial {
+    background-image: url(../images/b2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0;
+}
 
 /* <!-- 11.READY TO BUILD --> */
 
