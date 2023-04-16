@@ -564,9 +564,9 @@
     background-color: #fff;
     padding: 32px;
     border-radius: 6px;
-    box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+    box-shadow:1px 5px 7.5px rgba(14, 13, 13, 0.2);
     transition: all 0.3s;
-    border: 1px solid #eee;
+    border: 1px solid #f8f9fa;
 
 }
 
