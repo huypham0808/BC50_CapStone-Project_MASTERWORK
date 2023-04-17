@@ -4,13 +4,18 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
 }
+
 /* Start TRAN */
+
+
 .btn:hover,
 .btn:active,
 .btn:focus {
     outline: none !important;
     box-shadow: none !important;
 }
+
+
 
 /* HEADER */
 #header {
@@ -31,7 +36,14 @@
 }
 
 #header .navbar .navbar-brand {
-    font-size: 1.75rem;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+}
+
+#header .navbar .navbar-brand span,
+i {
+    font-size: 26px;
     font-weight: 700;
     color: #DC4F72;
     letter-spacing: -1px;
@@ -101,11 +113,6 @@
     border-color: #DC4F72;
 }
 
-#header .navbar .light__dark i {
-    font-size: 25px;
-    color: #5A5A5A;
-}
-
 #header .navbar .navbar-nav .nav-item.dropdown {
     padding: 0 20px 0 15px;
 }
@@ -126,8 +133,7 @@
     background-color: #fff;
     border: 1px solid #eee;
     box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
-
-    transform: translateX(-50px);
+    left: -50% !important;
 }
 
 #header .navbar .nav-item .dropdown-item {
@@ -137,6 +143,10 @@
     position: relative;
     padding-top: 0;
     padding-bottom: 14px;
+}
+
+#header .navbar .nav-item .dropdown-item:focus {
+    background-color: white;
 }
 
 #header .navbar .nav-item .dropdown-item:hover {
@@ -162,7 +172,6 @@
 #header .search-right {
     align-items: center;
     display: inline-grid;
-    grid-template-columns: auto 1fr;
 }
 
 #header .search-search i {
@@ -239,6 +248,49 @@
         margin-left: auto;
     }
 }
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        float: left;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+
+    }
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-link {
+        display: inline-block;
+        padding: 8px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .dropdown-menu {
+        /* transform: translateX(-50px); */
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+}
+@media (max-width: 992px){
+    .search-right {
+        text-align: center;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
+
 
 /* CAROUSEL */
 #carousel {
@@ -468,8 +520,9 @@
 }
 
 .modal-header .close:hover {
-    color:white;
+    color: white;
 }
+
 /* End TRAN */
 .title h6 {
     margin-bottom: 0.3rem;
@@ -564,7 +617,7 @@
     background-color: #fff;
     padding: 32px;
     border-radius: 6px;
-    box-shadow:1px 5px 7.5px rgba(14, 13, 13, 0.2);
+    box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
     transition: all 0.3s;
     border: 1px solid #f8f9fa;
 
@@ -870,9 +923,11 @@
 .questionAnswer {
     background-color: #F7F9FC;
 }
+
 .header__question {
     max-width: 750px;
 }
+
 .question__content ul {
     list-style: none;
     max-width: 750px;
@@ -985,11 +1040,12 @@
         line-height: 30px;
     }
 }
+
 @media screen and (max-width: 800px) {
-.header__question h3{
-    font-size: 2.5rem;
-    line-height: 50px;
-}
+    .header__question h3 {
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
 }
 
 /* <!-- 9. FEATURE --> */
@@ -1135,7 +1191,7 @@ h2.resp-accordion:first-child {
 @media only screen and (max-width: 768px) {
     ul.resp-tabs-list {
         display: none;
-;
+        ;
     }
 
     h2.resp-accordion {
@@ -1162,6 +1218,7 @@ h2.resp-accordion:first-child {
         border-bottom: 1px solid #c1c1c1 !important;
     }
 }
+
 .btn-outline-primary {
     line-height: 3rem;
     padding: 0 2rem;
@@ -1171,15 +1228,18 @@ h2.resp-accordion:first-child {
     transition: all 0.5s;
     text-transform: uppercase;
 }
+
 .btn-outline-primary:hover {
     color: #fff;
     background-color: #dc4f72;
     border-color: #dc4f72;
     font-weight: 700;
 }
+
 .products-content img {
     border-radius: 0.5rem;
 }
+
 /* <!-- 10.OUR CLIENT TESTIMONIAL --> */
 #testimonial {
     background-image: url(../images/b2.jpg);
@@ -1188,6 +1248,7 @@ h2.resp-accordion:first-child {
     background-position: center;
     padding: 7rem 0;
 }
+
 .ourCLient__item .slider-info {
     max-width: 95%;
     margin: 0 auto;
@@ -1198,6 +1259,7 @@ h2.resp-accordion:first-child {
     background-color: #fff;
     border-radius: 15px;
 }
+
 .ourCLient__item .img-circle {
     width: 100px;
     height: 100px;
@@ -1207,6 +1269,7 @@ h2.resp-accordion:first-child {
     border-radius: 50%;
     border: 3px solid #cf2952;
 }
+
 /* <!-- 11.READY TO BUILD --> */
 
 
