@@ -1244,13 +1244,25 @@ h2.resp-accordion:first-child {
 
 /* <!-- 10.OUR CLIENT TESTIMONIAL --> */
 #testimonial {
+    position: relative;
     background-image: url(../images/b2.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     padding: 7rem 0;
 }
-
+.ourClient .ourClient__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #ffffff6b;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.ourClient .testimonials {
+    z-index: 0;
+}
 .ourCLient__item .slider-info {
     max-width: 95%;
     margin: 0 auto;
@@ -1297,6 +1309,50 @@ h2.resp-accordion:first-child {
     transition: opacity 0.2s ease 0s;
     border-radius: 0px;
     position: relative;
+}
+.ourClient .message {
+    position: relative;
+}
+.ourClient .message span {
+    font-size: 1.875rem;
+    color: #5A5A5A;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: -2.5rem;
+    right: 0;
+}
+.ourClient .message p {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: #2C3038;
+}
+.ourClient .message .name h4 {
+    color: #cf2952;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+.ourClient .message .name p {
+    font-size: 0.8125rem;
+    color: #2C3038;
+}
+@media screen and (max-width: 576px){
+    .ourClient .ourCLient__item .slider-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+    }
+    .ourClient .ourCLient__item .slider-info .message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourClient .message span {
+        position: absolute;
+        top: 0;
+        left: -2.0rem;
+        right: 0;
+    }
 }
 /* <!-- 11.READY TO BUILD --> */
 
