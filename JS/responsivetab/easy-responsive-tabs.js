@@ -137,14 +137,5 @@ btnTimes.onclick = function (){
     btnMenu.style.display = 'inline-block';
 };
 
-window.onscroll = function() {
-    var nav = document.getElementById('header');
-    if (window.pageYOffset > 100) {
-        nav.style.paddingTop = '0px';
-        nav.style.paddingBottom = '0px';
-    } else {
-        nav.style.paddingTop = '10px';
-        nav.style.paddingBottom = '10px';
-    }
-}
+
 // End TRAN

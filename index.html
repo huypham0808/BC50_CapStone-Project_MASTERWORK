@@ -769,6 +769,15 @@
             } else {
                 document.getElementById("movetop").style.display = "none";
             }
+            
+            var nav = document.getElementById('header');
+            if (window.pageYOffset > 100) {
+                nav.style.paddingTop = '0px';
+                nav.style.paddingBottom = '0px';
+            } else {
+                nav.style.paddingTop = '10px';
+                nav.style.paddingBottom = '10px';
+            }
         }
 
         // When the user clicks on the button, scroll to the top of the document
