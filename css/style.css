@@ -201,31 +201,7 @@ i {
     background-color: #DC4F72;
     border: 1px solid transparent;
 }
-.navbar-dark .navbar-toggler-icon{
-    background-image: none;
-}
-.navbar-toggler-icon .icon-close{
-    display: none;
-}
 
-
-@media only screen and (min-width: 992px){
-    .navbar-expand-lg  #btnMenu,#btnTimes {
-        display: none !important;
-    }
-
-}
-@media only screen and (max-width: 991px){
-.navbar-toggler-icon.fa {
-    width: 2.125rem;
-    height: 2.125rem;
-    line-height: 2.125rem;
-    color: #fff;
-    font-weight: 900;
-    background-color: #dc4f72;
-    border-radius: 5px;
-}
-}
 @media (max-width: 768px) {
     .navbar-toggler-icon {
         background-color: #DC4F72;
@@ -306,7 +282,8 @@ i {
 
     }
 }
-@media (max-width: 992px){
+
+@media (max-width: 992px) {
     .search-right {
         text-align: center;
         margin-bottom: 10px;
@@ -1264,7 +1241,6 @@ h2.resp-accordion:first-child {
 .products-content img {
     border-radius: 0.5rem;
 }
-
 /* <!-- 10.OUR CLIENT TESTIMONIAL --> */
 #testimonial {
     position: relative;
@@ -1281,10 +1257,11 @@ h2.resp-accordion:first-child {
     background-color: #ffffff6b;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 .ourClient .testimonials {
-    z-index: 0;
+    position: relative;
+    z-index: 2;
 }
 .ourCLient__item .slider-info {
     max-width: 95%;
