@@ -451,7 +451,9 @@ i {
 .dark__header .ourClient .ourClient__overlay {
     background-color: #2727276b;
 }
-
+.dark__header h2.resp-accordion {
+    background-color: grey;
+}
 
 
 
