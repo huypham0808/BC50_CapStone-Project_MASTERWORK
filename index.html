@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="body">
     <!-- 1.HEADER -->
     <header id="header" class="fixed-top">
         <!-- <div class="container"> -->
@@ -41,10 +41,10 @@
 
             <!-- Toggler/collapsibe Button -->
             <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                <span class="navbar-toggler-icon fa icon-expand fa-bars fa-1x"></span>
             </button>
             <button id="btnTimes" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                <span class="navbar-toggler-icon fa icon-close fa-times fa-1x"></span>
             </button>
 
             <!-- Navbar links -->
@@ -82,9 +82,15 @@
                     <li class="nav-item mr-lg-3 mt-lg-0">
                         <a class="btn btn-outline-primary theme-button" href="#header">SCHEDULE A DEMO</a>
                     </li>
-                </ul>
 
+                </ul>
             </div>
+            <button id="btnSwitchMoon" class="theme__icon mx-lg-1">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+            <button id="btnSwitchSun" class="theme__icon mx-lg-1" style="display: none;">
+                <i class="fa-regular fa-sun"></i>
+            </button>
         </nav>
     </header>
     <!-- 2.CAROUSEL -->
@@ -391,7 +397,7 @@
         </div>
     </section>
     <!-- 9. PRODUCT -->
-    <section class="w3l-products py-5 mb-4" id="projects">
+    <section class="w3l-products py-5" id="projects">
         <div class="container py-lg-3">
             <div class="title header-section text-center mx-auto">
                 <h6 class="title">Featured Cases</h6>
@@ -402,12 +408,12 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-10 mx-auto">
-                    <div id="horizontalTab">
+                    <div id="horizontalTab" class="product__tab ">
                         <ul class="resp-tabs-list hor_1">
                             <li>Project One</li>
                             <li>Project Two</li>
                             <li>Project Three</li>
-                            <div class="clear"></div>
+                                <div class="clear"></div>
                         </ul>
                         <div class="resp-tabs-container hor_1">
                             <div class="products-content">
@@ -579,8 +585,12 @@
                     turpis sodales quis. Integer sit amet mattis quam.</p>
             </div>
             <div class="buttons mt-5">
-                <a href="#url" class="btn btn-outline-primary mr-2 theme-button">Book a Demo</a>
-                <a href="#url" class="btn btn-outline-primary theme-button ml-2">Get Started</a>
+                <div class="button__Demo">
+                    <a href="#url" class="btn btn-outline-primary theme-button">Book a Demo</a>
+                </div>
+                <div class="button__Started">
+                    <a href="#url" class="btn btn-primary theme-button">Get Started</a>
+                </div>
             </div>
         </div>
     </section>
@@ -715,7 +725,7 @@
                 width: 'auto',
                 fit: true,
                 closed: false,
-                tabidentify: '',
+                tabidentify: 'hor_1',
                 activetab_bg: 'white',
                 inactive_bg: '#F5F5F5',
                 active_border_color: '#c1c1c1',
@@ -755,7 +765,6 @@
                 }
             })
         });
-
     </script>
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
@@ -786,6 +795,9 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+    <script src="./JS/menutoggler.js"></script>
+    <!-- Switch theme -->
+    <script src="./JS/switchtheme.js"></script>
 </body>
 
 </html>
