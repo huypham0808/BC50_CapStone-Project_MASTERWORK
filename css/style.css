@@ -407,7 +407,7 @@ i {
     color: #fff;
 }
 .dark__header #carousel .content {
-    background-image: linear-gradient(to right,#131617 , rgba(255, 255, 255, 0.92)),url(../images/banner.jpg);
+    background-image: linear-gradient(to right,#131617 , rgba(255, 255, 255, 0.92)),url(../images/banner.jpg) !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
