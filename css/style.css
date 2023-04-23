@@ -385,6 +385,16 @@ i {
     box-shadow: 0 3px 19px rgba(145, 145, 145, 0.05);
 
 }
+.dark__header #carousel .content-left p,
+.dark__header #tools .tools__top p,
+.dark__header #tools .tools__bottom .card p,
+.dark__header #aboutOur .about__left p,
+.dark__header .counter__content .counter__item p:last-of-type,
+.dark__header .title p,
+.dark__header .main__footer .footer__list a,
+.dark__header .question__content ul li p{
+    color: #afafaf;
+}
 
 .dark__header #header .navbar .navbar-nav .nav-link,
 .dark__header #tools .tools__top h3,
@@ -397,7 +407,8 @@ i {
 .dark__header .products-content h3,
 .dark__header .footer__content h3,
 .dark__header .copyright .copyright__left p,
-.dark__header #header .navbar .navbar-nav .dropdown-toggle::after {
+.dark__header #header .navbar .navbar-nav .dropdown-toggle::after,
+.dark__header #carousel .content-left h3 {
     color: #fff;
 }
 .dark__header .products-content p {
