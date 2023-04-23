@@ -21,7 +21,6 @@
 #header {
     padding: 10px 0px;
     transition: all 0.4s ease 0s;
-    /* height: 90px; */
     height: auto;
     display: grid;
     align-items: center;
@@ -54,8 +53,6 @@ i {
 #header .navbar .navbar-nav .nav-item {
     position: relative;
     margin: 0 15px;
-    /* padding: 0 15px; */
-
 }
 
 #header .navbar .navbar-nav .nav-item.active .nav-link {
@@ -74,11 +71,6 @@ i {
 #header .navbar-nav .nav-item:hover .nav-link {
     color: #DC4F72;
 }
-
-/* #header .navbar .navbar-nav .nav-link i {
-    font-size: 12px;
-    color: #2C3038;
-} */
 
 #header .navbar-nav .nav-item .nav-link::before {
     content: "";
@@ -124,14 +116,9 @@ i {
     /* padding: 0 20px 0 15px; */
     margin: 0 15px;
 }
-
-#header .navbar .navbar-nav .dropdown-toggle::after {
-    content: "";
+#header .navbar .navbar-nav .nav-item.dropdown .nav-link .fa-caret-down{
+    font-size: 14px;
     color: #2C3038;
-    position: absolute;
-    top: 25px;
-    display: inline-block;
-
 }
 
 #header .navbar .nav-item .dropdown-menu {
@@ -380,35 +367,19 @@ i {
 
 /*Dark theme and light theme
     */
-.dark__header #header {
-    background: #222;
-    box-shadow: 0 3px 19px rgba(145, 145, 145, 0.05);
-
-}
-.dark__header #carousel .content-left p,
-.dark__header #tools .tools__top p,
-.dark__header #tools .tools__bottom .card p,
-.dark__header #aboutOur .about__left p,
 .dark__header .counter__content .counter__item p:last-of-type,
 .dark__header .title p,
 .dark__header .main__footer .footer__list a,
 .dark__header .question__content ul li p{
     color: #afafaf;
 }
-
-.dark__header #header .navbar .navbar-nav .nav-link,
-.dark__header #tools .tools__top h3,
-.dark__header #tools .tools__bottom .card h4,
-.dark__header #aboutOur .about__left h3,
 .dark__header .counter__content .counter__item h5,
 .dark__header .title h3,
 .dark__header .question__content ul li,
 .dark__header .resp-tabs-list li,
 .dark__header .products-content h3,
 .dark__header .footer__content h3,
-.dark__header .copyright .copyright__left p,
-.dark__header #header .navbar .navbar-nav .dropdown-toggle::after,
-.dark__header #carousel .content-left h3 {
+.dark__header .copyright .copyright__left p {
     color: #fff;
 }
 .dark__header .products-content p {
@@ -417,38 +388,24 @@ i {
 .dark__header #header .theme__icon i {
     color: #fff;
 }
-.dark__header #carousel .content {
-    background-image: linear-gradient(to right,#131617 , rgba(255, 255, 255, 0.92)),url(../images/banner.jpg) !important;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    padding-top: 100px;
-}
-.dark__header #carousel .btn-outline-primary {
-    color: #d5486b;
-    background-color: #fff;
-    
-}
-.dark__header #tools,
 .dark__header .counter__content .counter__item {
     background-color: #131617;
     border: 1px solid #333;
 }
-.dark__header #tools .tools__bottom .card,
 .dark__header .question__content ul li {
     background-color: #151515;
     border: 1px solid #333;
 }
-.dark__header #aboutOur,
 .dark__header .counter,
 .dark__header .exploreSolution,
-.dark__header .w3l-products,
-.dark__header .footer__content  {
-    background-color: #333;
-}
 .dark__header .questionAnswer,
+.dark__header .footer__content  {
+    background-color: #191c1d;
+}
+.dark__header .exploreSolution,
+.dark__header .w3l-products{
+background-color: #131617;
+}
 .dark__header .resp-tabs-container,
 .dark__header .resp-tabs-list li,
 .dark__header .readyBuild  {
@@ -462,11 +419,39 @@ i {
 .dark__header .ourClient .ourClient__overlay {
     background-color: #2727276b;
 }
+.dark__header .ourClient .message p{
+    color: #fff;
+}
+.dark__header .ourClient .message .name p{
+    color: #b7b7b7;
+}
+.dark__header .ourClient .message .name h4{
+    color: #dc4f72;
+}
 .dark__header h2.resp-accordion {
     background-color: grey;
 }
-
-
+.dark__header hr{
+    border: 1px solid #5a5a5a;
+}
+.dark__header .main__footer .footer__form .end-column {
+    background-color: #131617;
+}
+.dark__header .main__footer .footer__form .subscribe input[type="email"] {
+    background: #191c1d;
+}
+.dark__header .main__footer .footer__form .end-column h4{
+    color: #eee;
+}
+.dark__header .main__footer .footer__form .end-column p{
+    color: #b7b7b7;
+}
+.dark__header .copyright .copyright__left p{
+    color: #b7b7b7;
+}
+.dark__header .copyright .copyright__left a{
+    color: #eee;
+}
 
 @media screen and (max-width: 992px){
     #header .theme__icon {
@@ -1705,9 +1690,11 @@ h2.resp-accordion:first-child {
 
 .copyright .copyright__left a {
     text-decoration: none;
-    color: #2c3038;
+    color: #191c1d;
 }
-
+.copyright .copyright__left:hover a{
+    color: #dc4f72;
+}
 .main__footer .copyright__right ul {
     list-style-type: none;
 }
@@ -1719,6 +1706,9 @@ h2.resp-accordion:first-child {
 .main__footer .copyright__right .social i {
     color: #2C3038;
     font-size: 1rem;
+}
+.main__footer .copyright__right .social a:hover i{
+    color: #dc4f72;
 }
 
 .main__footer #movetop {
