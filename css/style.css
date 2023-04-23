@@ -407,7 +407,7 @@ i {
     color: #fff;
 }
 .dark__header #carousel .content {
-    background-image: linear-gradient(to right,#131617 , rgba(255, 255, 255, 0.92)),url(../images/banner.jpg);
+    background-image: linear-gradient(to right,#131617 , rgba(255, 255, 255, 0.92)),url(../images/banner.jpg) !important;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1270,7 +1270,7 @@ p {
     width: calc(100% / 3);
     text-align: center;
     color: #2c3038;
-    background: #fff !important;
+    background: #fff;
     border-bottom: 3px solid rgb(193, 193, 193);
 }
 
@@ -1394,7 +1394,7 @@ h2.resp-accordion:first-child {
 @media only screen and (max-width: 768px) {
     ul.resp-tabs-list {
         display: none;
-;
+        ;
     }
 
     h2.resp-accordion {
@@ -1413,11 +1413,15 @@ h2.resp-accordion:first-child {
         clear: none;
     }
 
+    .resp-accordion-closed {
+        display: none !important;
+    }
 
     .resp-vtabs .resp-tab-content:last-child {
         border-bottom: 1px solid #c1c1c1 !important;
     }
 }
+
 .btn-outline-primary {
     line-height: 3rem;
     padding: 0 2rem;
@@ -1427,15 +1431,20 @@ h2.resp-accordion:first-child {
     transition: all 0.5s;
     text-transform: uppercase;
 }
+
 .btn-outline-primary:hover {
     color: #fff;
     background-color: #dc4f72;
     border-color: #dc4f72;
     font-weight: 700;
 }
+
 .products-content img {
     border-radius: 0.5rem;
 }
+
+
+
 /* <!-- 10.OUR CLIENT TESTIMONIAL --> */
 #testimonial {
     position: relative;
