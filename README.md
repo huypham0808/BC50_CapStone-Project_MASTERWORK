@@ -1,5 +1,5 @@
 # BC50_CapStone-Project_MASTERWORK
-Team Size: 2
+Team Size: 3
 <br>
 Team members:
 * Phạm Ngô Hoàng Huy
